@@ -38,11 +38,11 @@ def callback(image_wv1, image_wv2, image_wv3, image_wv4, image_wv5):
 
     pub.publish(message)
 
-image_sub_wv1 = message_filters.Subscriber('/camera/image_wavelength_0', Image)
-image_sub_wv2 = message_filters.Subscriber('/camera/image_wavelength_1', Image)
-image_sub_wv3 = message_filters.Subscriber('/camera/image_wavelength_9', Image)
-image_sub_wv4 = message_filters.Subscriber('/camera/image_wavelength_10', Image)
-image_sub_wv5 = message_filters.Subscriber('/camera/image_wavelength_20', Image)
+image_sub_wv1 = message_filters.Subscriber('/camera/image_wavelength_0', Image) #644
+image_sub_wv2 = message_filters.Subscriber('/camera/image_wavelength_1', Image) #653
+image_sub_wv3 = message_filters.Subscriber('/camera/image_wavelength_9', Image) #661
+image_sub_wv4 = message_filters.Subscriber('/camera/image_wavelength_10', Image) #607
+image_sub_wv5 = message_filters.Subscriber('/camera/image_wavelength_20', Image) #701
 
 print('initialized')
 rospy.init_node('HyperspectralFusion')
